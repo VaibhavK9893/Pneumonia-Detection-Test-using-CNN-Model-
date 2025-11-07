@@ -1,0 +1,47 @@
+# 🩺 Pneumonia Detection Using CNN
+
+This project uses a **Convolutional Neural Network (CNN)** built with **TensorFlow** and **OpenCV** to detect **Pneumonia** from **chest X-ray images**.  
+It automatically learns patterns from labeled X-rays to classify them as either **Normal** or **Pneumonia-infected** lungs.
+
+---
+
+## 🚀 Features
+- Preprocessing of X-ray images using OpenCV  
+- Deep learning model built with TensorFlow/Keras  
+- Binary classification (Pneumonia / Normal)  
+- Saves trained model in `.h5` format for future predictions  
+- Includes error handling for missing or unreadable images  
+
+---
+
+## 🧠 Model Architecture
+- **Conv2D + ReLU** layers for feature extraction  
+- **MaxPooling2D** layers for dimensionality reduction  
+- **Flatten + Dense** layers for classification  
+- **Sigmoid activation** for binary output  
+
+---
+
+## 📂 Dataset Structure
+Ensure your dataset is organized as follows:
+
+data/
+│
+├── PNEUMONIA/
+│ ├── person1_bacteria_1.jpeg
+│ ├── person2_virus_3.jpeg
+│ └── ...
+│
+└── NORMAL/
+├── person1_normal.jpeg
+├── person2_normal.jpeg
+└── ...
+
+
+---
+
+## ⚙️ Requirements
+Install all dependencies before running the project:
+
+```bash
+pip install tensorflow opencv-python scikit-learn numpy
